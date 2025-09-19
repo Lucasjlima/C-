@@ -1,0 +1,8 @@
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\bin\Debug\ConsoleApp2v2.exe.config
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\bin\Debug\ConsoleApp2v2.exe
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\bin\Debug\ConsoleApp2v2.pdb
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\obj\Debug\ConsoleApp2v2.csproj.AssemblyReference.cache
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\obj\Debug\ConsoleApp2v2.csproj.CoreCompileInputs.cache
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\obj\Debug\ConsoleApp2v2.exe
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\obj\Debug\ConsoleApp2v2.pdb
+C:\Users\lucas\GITHUB\C-\ConsoleApp2v2\ConsoleApp2v2\obj\Debug\ConsoleApp2v2.exe.config

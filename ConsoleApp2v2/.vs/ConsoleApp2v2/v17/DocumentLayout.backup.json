@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\GITHUB\\C-\\ConsoleApp2v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B39633-5D54-47A2-85CB-C4BD1FF5AFDA}|ConsoleApp2v2\\ConsoleApp2v2.csproj|c:\\users\\lucas\\github\\c-\\consoleapp2v2\\consoleapp2v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B39633-5D54-47A2-85CB-C4BD1FF5AFDA}|ConsoleApp2v2\\ConsoleApp2v2.csproj|solutionrelative:consoleapp2v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\GITHUB\\C-\\ConsoleApp2v2\\ConsoleApp2v2\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2v2\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\GITHUB\\C-\\ConsoleApp2v2\\ConsoleApp2v2\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp2v2\\Program.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwB4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:44:59.35Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
