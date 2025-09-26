@@ -1,0 +1,6 @@
+@Sprint_1_Oracle_C__HostAddress = http://localhost:5076
+
+GET {{Sprint_1_Oracle_C__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+# Visual Studio
+.vs/
+*.vsidx
+
+# JetBrains (Rider, IntelliJ, etc.)
+.idea/
+
+# Outros
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
