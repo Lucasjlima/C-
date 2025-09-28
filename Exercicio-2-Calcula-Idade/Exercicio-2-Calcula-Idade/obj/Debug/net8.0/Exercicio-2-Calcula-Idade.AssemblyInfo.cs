@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Exercicio-2-Calcula-Idade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1546b4809592f32a13c41f11d309abd213a0bd98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a72063daabe3c99a8d63553d7aee066fe4bf748")]
 [assembly: System.Reflection.AssemblyProductAttribute("Exercicio-2-Calcula-Idade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Exercicio-2-Calcula-Idade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

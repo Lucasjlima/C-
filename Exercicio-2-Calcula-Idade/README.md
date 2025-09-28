@@ -1,3 +1,9 @@
+Participantes
+Nome Completo e RM
+Lucas José Lima 561160
+Eduardo Osterloh Bindo 559755
+Rangel Bernardi Jordão 560547
+
 Calculadora de Idade em C#
 Sobre o Projeto
 Este é um projeto de console simples, desenvolvido em C# com o Visual Studio 2022, que tem como objetivo calcular a idade de uma pessoa. O usuário informa seu nome completo e data de nascimento, e o programa calcula a idade com base na data atual do sistema.
@@ -23,9 +29,3 @@ Abra o arquivo da solução (.sln) com o Visual Studio 2022.
 Pressione F5 ou clique no botão "Iniciar" para compilar e executar o projeto.
 
 Siga as instruções que aparecerão no console.
-
-Participantes
-Nome Completo RM
-Lucas José Lima 561160
-Eduardo Osterloh Bindo 559755
-Rangel Bernardi Jordão 560547
