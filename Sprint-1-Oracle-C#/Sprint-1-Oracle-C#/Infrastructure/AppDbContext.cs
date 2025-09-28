@@ -1,5 +1,11 @@
-﻿namespace Sprint_1_Oracle_C_.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore;
+using Sprint_1_Oracle_C_.Models;
 
-public class AppDbContext
+namespace Sprint_1_Oracle_C_.Infrastructure;
+
+public class AppDbContext : DbContext
 {
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+    public DbSet<News> reports { get; set; }
 }
