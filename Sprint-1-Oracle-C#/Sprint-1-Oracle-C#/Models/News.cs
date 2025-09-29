@@ -15,7 +15,6 @@ public class News
     public string  Source { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "published content is required")]
-    [Range(typeof(DateTime), "1/1/1900", "12/31/2099", ErrorMessage = "Published date must be between 1/1/1900 and 12/31/2099")]
     public DateTime PublishedAt { get; set;}
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

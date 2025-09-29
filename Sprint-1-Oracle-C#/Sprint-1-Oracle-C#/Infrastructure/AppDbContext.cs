@@ -7,5 +7,5 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    public DbSet<News> reports { get; set; }
+    public DbSet<News> Reports { get; set; }
 }

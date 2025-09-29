@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sprint-1-Oracle-C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1546b4809592f32a13c41f11d309abd213a0bd98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d66324fd40e337e21d2ff40f204a3836e1bd656c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sprint-1-Oracle-C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sprint-1-Oracle-C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
