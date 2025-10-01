@@ -17,6 +17,6 @@ public class News
     [Required(ErrorMessage = "published content is required")]
     public DateTime PublishedAt { get; set;}
 
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
 
 }

@@ -2,7 +2,6 @@
 using Sprint_1_Oracle_C_.Dtos;
 using Sprint_1_Oracle_C_.Models;
 using Sprint_1_Oracle_C_.Repositories;
-using System.Threading.Tasks;
 
 namespace Sprint_1_Oracle_C_.Service;
 
@@ -20,14 +19,7 @@ public class NewsService
     public async Task<IEnumerable<NewsResponseDto>> GetAllNews()
     {
         var news = await _repository.GetAllAsync();
-        return news.Select(n => new NewsResponseDto
-        {
-            Id = n.Id,
-            Title = n.Title,
-            Source = n.Source,
-            PublishedAt = n.PublishedAt,
-            CreatedAt = n.CreatedAt,
-        }).ToList();
+        return _mapper.Map<List<NewsResponseDto>>(news);
     }
 
     public async Task<NewsResponseDto?> GetByIdAsync(int id)
@@ -37,47 +29,25 @@ public class NewsService
         {
             throw new KeyNotFoundException("News not found");
         }
-        return new NewsResponseDto
-        {
-            Id = news.Id,
-            Title = news.Title,
-            Source = news.Source,
-            PublishedAt = news.PublishedAt,
-            CreatedAt = news.CreatedAt
-
-        };
+        return _mapper.Map<NewsResponseDto>(news);
     }
 
     public async Task<NewsResponseDto> AddAsync(NewsDto dto)
     {
         News news = _mapper.Map<News>(dto);
         await _repository.AddAsync(news);
-        return new NewsResponseDto
-        {
-            Title = news.Title,
-            Source = news.Source,
-            PublishedAt = news.PublishedAt,
-            CreatedAt = news.CreatedAt
-        };
+        return _mapper.Map<NewsResponseDto>(news);
     }
 
     public async Task<NewsResponseDto?> UpdateAsync(NewsDto dto, int id)
     {
         var news = await _repository.GetByIdAsync(id) ?? throw new KeyNotFoundException("News not found");
-        news.Title = dto.Title;
-        news.Source = dto.Source;
-        news.PublishedAt = dto.PublishedAt;
-        news.CreatedAt = DateTime.UtcNow;
+        _mapper.Map(dto, news);
+        news.CreatedAt = DateTime.Now;
 
         await _repository.UpdateAsync(news);
 
-        return new NewsResponseDto
-        {
-            Title = news.Title,
-            Source = news.Source,
-            PublishedAt = news.PublishedAt,
-            CreatedAt = news.CreatedAt
-        };
+        return _mapper.Map<NewsResponseDto>(news);
     }
 
     public async Task DeleteAsync(int id)

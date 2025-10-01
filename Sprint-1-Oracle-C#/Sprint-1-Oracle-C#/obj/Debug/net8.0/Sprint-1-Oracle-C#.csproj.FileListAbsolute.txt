@@ -161,8 +161,3 @@ C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\obj\Debug\net8.0\
 C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\obj\Debug\net8.0\ref\Sprint-1-Oracle-C#.dll
 C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\lucas\GITHUB\C-\Sprint-1-Oracle-C#\Sprint-1-Oracle-C#\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll

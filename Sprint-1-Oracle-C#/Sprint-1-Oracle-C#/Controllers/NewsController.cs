@@ -9,14 +9,15 @@ namespace Sprint_1_Oracle_C_.Controllers;
 public class NewsController : ControllerBase
 {
     private readonly NewsService _service;
-    private readonly IMapper _mapper;
 
 
-    public NewsController(NewsService service, IMapper mapper)
+
+    public NewsController(NewsService service)
     {
         _service = service;
-        _mapper = mapper;
+
     }
+    
 
 
     [HttpGet]

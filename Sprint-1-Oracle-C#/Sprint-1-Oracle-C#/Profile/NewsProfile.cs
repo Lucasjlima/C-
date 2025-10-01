@@ -8,6 +8,12 @@ public class NewsProfile : Profile
 {
     public NewsProfile()
     {
-        CreateMap<NewsResponseDto, News>();
+        CreateMap<NewsDto, News>()
+            .ForMember(desc => desc.CreatedAt, opt => opt.MapFrom(_ => DateTime.Now));
+
+        CreateMap<NewsUpdateDto, News>()
+            .ForMember(desc => desc.CreatedAt, opt => opt.MapFrom(_ => DateTime.Now));
+
+        CreateMap<News, NewsResponseDto>();
     }
 }
