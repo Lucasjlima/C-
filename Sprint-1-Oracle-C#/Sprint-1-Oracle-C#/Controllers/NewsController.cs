@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Sprint_1_Oracle_C_.Dtos;
 using Sprint_1_Oracle_C_.Service;
 
@@ -8,10 +9,13 @@ namespace Sprint_1_Oracle_C_.Controllers;
 public class NewsController : ControllerBase
 {
     private readonly NewsService _service;
+    private readonly IMapper _mapper;
 
-    public NewsController(NewsService service)
+
+    public NewsController(NewsService service, IMapper mapper)
     {
         _service = service;
+        _mapper = mapper;
     }
 
 
@@ -42,7 +46,7 @@ public class NewsController : ControllerBase
         try
         {
             var news = await _service.AddAsync(dto);
-            return Ok(news);
+            return CreatedAtAction(nameof(GetById), new { id = news.Id }, news);
         }
         catch (Exception e)
         {

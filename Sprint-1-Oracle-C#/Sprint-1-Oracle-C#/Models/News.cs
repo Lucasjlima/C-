@@ -4,7 +4,7 @@ namespace Sprint_1_Oracle_C_.Models;
 
 public class News
 {
-
+    [Key]
     public int Id { get; set; }
 
     [Required(ErrorMessage ="title is required")]

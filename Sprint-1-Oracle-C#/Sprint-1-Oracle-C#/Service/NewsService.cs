@@ -1,4 +1,5 @@
-﻿using Sprint_1_Oracle_C_.Dtos;
+﻿using AutoMapper;
+using Sprint_1_Oracle_C_.Dtos;
 using Sprint_1_Oracle_C_.Models;
 using Sprint_1_Oracle_C_.Repositories;
 using System.Threading.Tasks;
@@ -8,10 +9,12 @@ namespace Sprint_1_Oracle_C_.Service;
 public class NewsService
 {
     private readonly INewsRepository _repository;
+    private readonly IMapper _mapper;
 
-    public NewsService(INewsRepository repository)
+    public NewsService(INewsRepository repository, IMapper mapper   )
     {
         _repository = repository;
+        _mapper = mapper;
     }
 
     public async Task<IEnumerable<NewsResponseDto>> GetAllNews()
@@ -19,6 +22,7 @@ public class NewsService
         var news = await _repository.GetAllAsync();
         return news.Select(n => new NewsResponseDto
         {
+            Id = n.Id,
             Title = n.Title,
             Source = n.Source,
             PublishedAt = n.PublishedAt,
@@ -35,6 +39,7 @@ public class NewsService
         }
         return new NewsResponseDto
         {
+            Id = news.Id,
             Title = news.Title,
             Source = news.Source,
             PublishedAt = news.PublishedAt,
@@ -45,15 +50,7 @@ public class NewsService
 
     public async Task<NewsResponseDto> AddAsync(NewsDto dto)
     {
-        var news = new News
-        {
-            Title = dto.Title,
-            Source = dto.Source,
-            PublishedAt = dto.PublishedAt,
-            CreatedAt = DateTime.UtcNow,
-
-        };
-
+        News news = _mapper.Map<News>(dto);
         await _repository.AddAsync(news);
         return new NewsResponseDto
         {
