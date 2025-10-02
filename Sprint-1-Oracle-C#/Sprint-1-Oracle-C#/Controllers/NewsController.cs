@@ -25,7 +25,7 @@ public class NewsController : ControllerBase
     {
         try
         {
-            var news = await _service.GetAllNews();
+            var news = await _service.GetAllNewsAsync();
             return Ok(news);
         } catch (Exception e)
         {
@@ -50,6 +50,19 @@ public class NewsController : ControllerBase
             return CreatedAtAction(nameof(GetById), new { id = news.Id }, news);
         }
         catch (Exception e)
+        {
+            return StatusCode(500, e.Message);
+        }
+    }
+
+    [HttpPut("{id:int}")]
+    public async Task<IActionResult> UpdateNews([FromBody] NewsUpdateDto dto, int id)
+    {
+        try
+        {
+            var updateNews = await _service.UpdateAsync(dto, id);
+            return Ok(updateNews);
+        } catch ( Exception e)
         {
             return StatusCode(500, e.Message);
         }

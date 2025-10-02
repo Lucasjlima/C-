@@ -16,7 +16,7 @@ public class NewsService
         _mapper = mapper;
     }
 
-    public async Task<IEnumerable<NewsResponseDto>> GetAllNews()
+    public async Task<IEnumerable<NewsResponseDto>> GetAllNewsAsync()
     {
         var news = await _repository.GetAllAsync();
         return _mapper.Map<List<NewsResponseDto>>(news);
@@ -39,7 +39,7 @@ public class NewsService
         return _mapper.Map<NewsResponseDto>(news);
     }
 
-    public async Task<NewsResponseDto?> UpdateAsync(NewsDto dto, int id)
+    public async Task<NewsResponseDto?> UpdateAsync(NewsUpdateDto dto, int id)
     {
         var news = await _repository.GetByIdAsync(id) ?? throw new KeyNotFoundException("News not found");
         _mapper.Map(dto, news);

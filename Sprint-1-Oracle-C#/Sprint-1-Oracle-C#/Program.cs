@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Sprint_1_Oracle_C_.Infrastructure;
 using Sprint_1_Oracle_C_.Repositories;
 using Sprint_1_Oracle_C_.Service;
