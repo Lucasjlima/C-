@@ -15,5 +15,14 @@ public class NewsProfile : Profile
             .ForMember(desc => desc.CreatedAt, opt => opt.MapFrom(_ => DateTime.Now));
 
         CreateMap<News, NewsResponseDto>();
+
+        CreateMap<News, NewsUpdateDto>();
+
+        CreateMap<NewsUpdateDto, News>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore())
+            .ForMember(dest => dest.CreatedAt, opt => opt.Ignore())
+            .ForMember(dest => dest.PublishedAt, opt => opt.Ignore())
+             .ForAllMembers(opts => opts.Condition((src, dest, srcMember) =>
+                srcMember != null));
     }
 }
