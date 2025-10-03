@@ -197,6 +197,18 @@
         }
       }
     },
+    "/api/NewsApi/external": {
+      "get": {
+        "tags": [
+          "NewsApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/test": {
       "get": {
         "tags": [

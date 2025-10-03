@@ -18,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // DI: repositories and services
 builder.Services.AddScoped<INewsRepository, NewsRepository>();
 builder.Services.AddScoped<NewsService>();
+builder.Services.AddHttpClient<NewsApiService>();
+builder.Services.Configure<NewsApiService>(builder.Configuration.GetSection("NewsApi"));
 
 var app = builder.Build();
 
