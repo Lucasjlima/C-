@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.AspNetCore.Mvc;
 using Sprint_1_Oracle_C_.Dtos;
 using Sprint_1_Oracle_C_.Models;
 using Sprint_1_Oracle_C_.Repositories;
@@ -41,15 +40,13 @@ public class NewsService
         return _mapper.Map<NewsResponseDto>(news);
     }
 
-    public async Task<NewsResponseDto?> UpdateAsync(NewsUpdateDto dto, int id)
+    public async Task UpdateAsync(NewsUpdateDto dto, int id)
     {
         var news = await _repository.GetByIdAsync(id) ?? throw new KeyNotFoundException("News not found");
         _mapper.Map(dto, news);
         news.CreatedAt = DateTime.Now;
 
         await _repository.UpdateAsync(news);
-
-        return _mapper.Map<NewsResponseDto>(news);
     }
 
     public async Task<NewsResponseDto?> PatchAsync(int id, JsonPatchDocument<NewsUpdateDto> patchDto)

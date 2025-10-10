@@ -62,8 +62,8 @@ public class NewsController : ControllerBase
     {
         try
         {
-            var updateNews = await _service.UpdateAsync(dto, id);
-            return Ok(updateNews);
+            await _service.UpdateAsync(dto, id);
+            return NoContent();
         } catch (Exception e)
         {
             return StatusCode(500, e.Message);
