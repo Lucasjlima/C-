@@ -18,8 +18,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // DI: repositories and services
 builder.Services.AddScoped<INewsRepository, NewsRepository>();
 builder.Services.AddScoped<NewsService>();
-builder.Services.AddHttpClient<NewsApiService>();
-builder.Services.Configure<NewsApiService>(builder.Configuration.GetSection("NewsApi"));
 
 var app = builder.Build();
 
@@ -34,7 +32,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
-// ADICIONE ESTAS LINHAS PARA CRIAR O BANCO AUTOMATICAMENTE
+// CRIA O BANCO AUTOMATICAMENTE
 using (var scope = app.Services.CreateScope())
 {
     try

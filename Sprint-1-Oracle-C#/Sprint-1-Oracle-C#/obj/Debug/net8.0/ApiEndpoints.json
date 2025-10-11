@@ -100,16 +100,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sprint_1_Oracle_C_.Controllers.NewsApiController",
-    "Method": "GetExternalNews",
-    "RelativePath": "api/NewsApi/external",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Program\u002B\u003C\u003Ec",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
     "RelativePath": "api/test",
@@ -126,26 +116,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Sprint_1_Oracle_C_.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Sprint_1_Oracle_C_.WeatherForecast, Sprint-1-Oracle-C#, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]
